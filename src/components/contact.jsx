@@ -23,13 +23,13 @@ export default class Contact extends Component {
                             <fieldset>
             
                             <div className="form-field">
-                                <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" className="full-width" />
+                                <input name="contactName" type="text" id="contactName" placeholder="Name" minLength="2" required="" aria-required="true" className="full-width" />
                             </div>
                             <div className="form-field">
-                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" className="full-width" />
+                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" required="" aria-required="true" className="full-width" />
                             </div>
                             <div className="form-field">
-                                <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" className="full-width" />
+                                <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" className="full-width" />
                             </div>
                             <div className="form-field">
                                 <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true" className="full-width"></textarea>

@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import SkillListView from './common/SkillListView'
+
+const leadText = 'About Me';
 
 export default class About extends Component {
     render() {
@@ -9,7 +12,7 @@ export default class About extends Component {
                     <div className="col-full text-center">
                         <h3>About</h3>
                         <h1>More About Me</h1>
-                        <p className="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+                        <p className="lead">{leadText}</p>
                     </div>
                 </div>
 
@@ -28,32 +31,7 @@ export default class About extends Component {
                     <div className="col-six tab-full right">
                         <h3>I've Got Some skills.</h3>
 
-                        <ul className="skill-bars">
-                            <li>
-                            <div className="progress percent90"><span>90%</span></div>
-                            <strong>HTML5</strong>
-                            </li>
-                            <li>
-                            <div className="progress percent85"><span>85%</span></div>
-                            <strong>CSS3</strong>
-                            </li>
-                            <li>
-                            <div className="progress percent70"><span>70%</span></div>
-                            <strong>JQuery</strong>
-                            </li>
-                            <li>
-                            <div className="progress percent95"><span>95%</span></div>
-                            <strong>PHP</strong>
-                            </li>
-                            <li>
-                            <div className="progress percent75"><span>75%</span></div>
-                            <strong>Wordpress</strong>
-                            </li>   
-                            <li>
-                            <div className="progress percent90"><span>90%</span></div>
-                            <strong>Angular JS</strong>
-                            </li>   
-                        </ul>
+                        <SkillListView></SkillListView>
                     </div>
 
                 </div>

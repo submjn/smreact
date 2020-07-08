@@ -58,14 +58,10 @@
     /* Move header
      * -------------------------------------------------- */
     var ssMoveHeader = function () {
-
-        var hero = $('.page-hero'),
-            hdr = $('header'),
-            triggerHeight = hero.outerHeight() - 170;
-
-
         $WIN.on('scroll', function () {
-
+            var hero = $('.page-hero'),
+            hdr = $('.s-header'),
+            triggerHeight = hero.outerHeight() - 170;
             var loc = $WIN.scrollTop();
 
             if (loc > triggerHeight) {

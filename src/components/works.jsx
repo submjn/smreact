@@ -22,8 +22,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-beetle.jpg" className="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                        <img src="images/portfolio/beetle.jpg" 
-                                            srcset="images/portfolio/beetle.jpg 1x, images/portfolio/beetle@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/beetle.jpg" alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>
@@ -53,8 +52,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-lighthouse.jpg" className="thumb-link" title="Lighthouse" data-size="1050x700">
-                                        <img src="images/portfolio/lighthouse.jpg" 
-                                            srcset="images/portfolio/lighthouse.jpg 1x, images/portfolio/lighthouse@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/lighthouse.jpg" alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>
@@ -84,8 +82,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-salad.jpg" className="thumb-link" data-size="1050x700">
-                                        <img src="images/portfolio/salad.jpg" 
-                                            srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/salad.jpg" alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>
@@ -115,8 +112,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-woodcraft.jpg" className="thumb-link" data-size="1050x700">
-                                        <img src="images/portfolio/woodcraft.jpg"
-                                            srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/woodcraft.jpg" alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>
@@ -146,8 +142,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-skaterboy.jpg" className="thumb-link" data-size="1050x700">
-                                        <img src="images/portfolio/skaterboy.jpg"
-                                            srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/skaterboy.jpg" alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>
@@ -177,8 +172,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-liberty.jpg" className="thumb-link" data-size="1050x700">
-                                        <img src="images/portfolio/liberty.jpg"
-                                            srcset="images/portfolio/liberty.jpg 1x, images/portfolio/liberty@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/liberty.jpg" alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>
@@ -208,8 +202,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-minimalismo.jpg" className="thumb-link" data-size="1050x700">
-                                        <img src="images/portfolio/minimalismo.jpg"
-                                            srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/minimalismo.jpg" alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>
@@ -239,8 +232,7 @@ export default class Works extends Component {
 
                                 <div className="item-folio__thumb">
                                     <a href="images/portfolio/gallery/g-shutterbug.jpg" className="thumb-link" data-size="1050x700">
-                                        <img src="images/portfolio/shutterbug.jpg"
-                                            srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="" />
+                                        <img src="images/portfolio/shutterbug.jpg"  alt="" />
                                         <span className="shadow-overlay"></span>
                                     </a>
                                 </div>

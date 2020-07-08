@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Photoswipe extends Component {
     render(){
         return (
-            <div aria-hidden="true" className="pswp" role="dialog" tabindex="-1">
+            <div aria-hidden="true" className="pswp" role="dialog" tabIndex="-1">
 
                 <div className="pswp__bg"></div>
                 <div className="pswp__scroll-wrap">
