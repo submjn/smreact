@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const timeline = [
+const timelineData = [
     {
         id: 1,
         timeframe: {
@@ -10,7 +10,7 @@ const timeline = [
         company: 'Sabre Systems',
         position: 'Senior Software Developer',
         location: 'Remote (Charlottesville, Virginia)',
-        description: ''
+        description: 'Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.'
     },
     {
         id: 2,
@@ -18,10 +18,10 @@ const timeline = [
             start: 'March 2018',
             end: 'November 2018'
         },
-        company: 'Updater - Insurance Division',
+        company: 'Vertical One',
         position: 'Senior Frontend Engineer',
         location: 'Charlottesville, Virginia',
-        description: ''
+        description: 'Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.'
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const timeline = [
         company: 'Digital Management Inc',
         position: 'Senior Frontend Developer',
         location: 'Remote (Charlottesville, Virginia)',
-        desctiption: ''
+        description: 'Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.'
     },
     {
         id: 4,
@@ -43,66 +43,61 @@ const timeline = [
         company: 'Silverchair Inc',
         position: 'UI Developer',
         location: 'Charlottesville, Virginia',
-        description: ''
+        description: 'Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.'
     },
+    {
+      id: 5,
+      timeframe: {
+          start: 'October 2009',
+          end: 'September 2010'
+      },
+      company: 'Enviroapps',
+      position: 'UI Developer',
+      location: 'Orlando, Florida',
+      description: 'Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.'
+  },
 ]
 
-const TimelineListItem = ({item}) => (
-    <div className="timeline__block">
-        <div className="timeline__bullet"></div>
-        <div className="timeline__header">
-            <p className="timeline__timeframe">{item.timeframe.start} - {item.timeframe.end}</p>
-            <h3>{item.company}</h3>
-            <h5>{item.position}</h5>
-        </div>
-        <div className="timeline__desc">
-            <p>{item.description}</p>
-        </div>
+const Timeline = ({item}) => (
+    <div className="timeline">
+        {
+            item.map(item => (
+              <div className="timeline__block" key={item.id}>
+                  <div className="timeline__bullet"></div>
+                  <div className="timeline__header">
+                      <p className="timeline__timeframe">{item.timeframe.start} - {item.timeframe.end}</p>
+                      <h3>{item.company}</h3>
+                      <h5>{item.position}</h5>
+                  </div>
+                  <div className="timeline__desc">
+                      <p>{item.description}</p>
+                  </div>
+              </div>
+            ))
+        }
     </div>
 );
 
-// const TimelineListView = () => (
-//     <div className="col-six tab-full left">
-//         <div className="timeline">
-//         {
-//             timeline.map(item => (
-//                 <TimelineListItem key={item.id} item={item} />
-//             ))
-//         }
-//         </div>
-//     </div>
-// );
-
 class TimelineListView extends Component {
-    // var columnTypes = [LeftColumn, RightColumn];
     render() {
-      var rows = [];
-      var children = [];
-      var columnTypes = [LeftColumn, RightColumn];
+      var size = Math.round(timelineData.length / 2);
+      let leftTimeline = [], rightTimeline = [];
 
-      for (var i = 0; i < timeline.length; i++) {
-        // x will be 0, 1, or 2
-        var x = i % 2;
-        // Get the button type to use
-        var columnType = columnTypes[x];
-        
-        // Create the button using `createElement`
-        children.push(React.createElement(column, icons[i]);
-        // If this is the last button of three, add these in a container
-        // and get a new array for children
-        if (x == 2) {
-          rows.push(<IconContainer>{children}</IconContianer>);
-          children = [];
-        }
+      for(let i = 0; i < timelineData.length; i++) {
+        if(i < size) leftTimeline.push(timelineData[i])
+        else rightTimeline.push(timelineData[i])
       }
-      // Handle any remaining children
-      if (children.length) {
-        rows.push(<IconContainer>{children}</IconContianer>);
-      }
+
       return (
-        <TopContainer>
-          {rows}
-        </TopContainer>
+        <div className="timeline-view">
+          <div className="col-six tab-full left">
+            <Timeline item={leftTimeline} />
+          </div>
+          <div className="col-six tab-full right">
+            <Timeline item={rightTimeline} />
+          </div>
+        </div>
+
       );
     }
   }
