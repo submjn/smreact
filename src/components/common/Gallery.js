@@ -6,19 +6,18 @@ function flatten(arr) {
       return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
     }, []);
   }
-function groupByProjects(works, prop) {
-    const arr = works.map(item => item.projects ? item.projects : [])
-    const arr2 = works.map(item => item.clients ? item.clients : [])
-    const arr3 = arr2.map(item => item.projects ? item.projects : [])
-    const newArr = arr3.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten), []);
-    newArr.concat(arr)
-    const newArr2 =  newArr.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten), []);
-    console.log(newArr2)
-    return newArr2
+function groupByProjects(projects, prop) {
+    var arr = projects.map(item => item.projects).filter(x => x !== undefined)
+    var arr2 = projects.map(item => item.clients).filter(x => x !== undefined)
+    arr2 = arr2.map(item => item[0].projects)
+    arr = arr.concat(arr2)
+    // console.log(arr)
+    return arr.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten), []);
 }
 
 let Projects = groupByProjects(Works, 'projects');
 // console.log(Projects)
+
 const Gallery = () => (
     <div className="masonry">
         {
