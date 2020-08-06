@@ -7,11 +7,14 @@ function flatten(arr) {
     }, []);
   }
 function groupByProjects(works, prop) {
-    const arr = works.map(item => {
-        return item.projects
-    })
-    console.log(arr)
-    return arr.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten), []);
+    const arr = works.map(item => item.projects ? item.projects : [])
+    const arr2 = works.map(item => item.clients ? item.clients : [])
+    const arr3 = arr2.map(item => item.projects ? item.projects : [])
+    const newArr = arr3.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten), []);
+    newArr.concat(arr)
+    const newArr2 =  newArr.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten), []);
+    console.log(newArr2)
+    return newArr2
 }
 
 let Projects = groupByProjects(Works, 'projects');
