@@ -12,12 +12,10 @@ export default class Home extends Component {
 
                     <div className="row home-content__main">
 
-                        <h3>Hello &amp; Namaste</h3>
+                        <h3>Hello There &amp; Namaste</h3>
 
                         <h1>
-                            I am Subash Maharjan <br />
-                            I am a Senior Frontend Developer <br />
-                            based in Charlottesville, Virgina.
+                        Creative, Detail Oriented, Organized &amp; Adaptable Fullstack Developer.
                         </h1>
 
                         <div className="home-content__buttons">

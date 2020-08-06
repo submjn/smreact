@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import SkillListView from './common/SkillListView'
+// import SkillListView from './common/SkillListView'
 import TimelineListView from './common/Timeline';
 
-const leadText = 'About Me';
+const leadText = 'Creative and detail oriented Fullstack Developer, with a passion for thoughtful UI/UX design, collaboration and development.';
 
 export default class About extends Component {
     render() {
@@ -12,28 +12,32 @@ export default class About extends Component {
                 <div className="row narrow section-intro has-bottom-sep">
                     <div className="col-full text-center">
                         <h3>About</h3>
-                        <h1>More About Me</h1>
+                        <h1>Subash Maharjan</h1>
                         <p className="lead">{leadText}</p>
+                        
                     </div>
                 </div>
-
+                <div className="row section-intro has-bottom-sep">
+                    <div className="col-full text-center">
+                        <img src="images/hero-bg.jpg" alt="Subash Maharjan"/>
+                    </div>
+                </div>
+                
                 <div className="row about-content">
 
-                    <div className="col-six tab-full left">
-                        <h3>Howdy!</h3>
-
-                        <p>Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam nostrud mollit laboris sunt magna velit culpa consectetur nostrud consectetur labore sed do.</p>
+                    <div className="col-full tab-full left">
+                        <p>I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations.</p>
 
                         <p>
-                        Lorem ipsum Nisi officia Duis irure voluptate dolor commodo pariatur occaecat aliquip adipisicing voluptate Ut in qui ea sint occaecat in commodo in in in incididunt ut sunt in Ut Duis in ut ex qui anim cupidatat cupidatat ex in non dolore labore ea amet cillum ea qui dolor nisi sed velit mollit exercitation ex fugiat labore in deserunt culpa laborum culpa anim dolore laboris amet irure mollit proident velit fugiat aute ea elit magna consequat qui officia quis elit Duis dolor esse cupidatat tempor proident voluptate aliqua ex cupidatat do eiusmod veniam irure laborum ut magna nostrud dolore ullamco commodo elit sit magna aliqua laborum veniam officia dolor.	
+                        I've always sought out opportunities and challenges that are meaningful to me. Although my professional path has taken many twists and turns, I've never stopped engaging my passion to help others and solve problems. As a devellper, I enjoy using my obssesive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I'm excited to make a big impact at a high growth company.	
                         </p>
                     </div>
 
-                    <div className="col-six tab-full right">
+                    {/* <div className="col-three tab-full right">
                         <h3>I've Got Some skills.</h3>
 
                         <SkillListView></SkillListView>
-                    </div>
+                    </div> */}
 
                 </div>
 
