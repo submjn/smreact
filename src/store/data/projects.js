@@ -114,7 +114,7 @@ export const Works = [
               "title": "MDAT",
               "category": "Web Development",
               "image": [
-                "mars",
+                "mdat",
                 "Microdata Access Tool",
                 "alt-text"
               ],
@@ -133,7 +133,7 @@ export const Works = [
               "title": "CEDSCI",
               "category": "Web Development",
               "image": [
-                "mars",
+                "cedsci",
                 "Census Data Dessimination Tool",
                 "alt-text"
               ],
@@ -151,7 +151,11 @@ export const Works = [
             {
               "title": "Search Compare (Proof of Concept)",
               "category": "Web Development",
-              "image": [],
+              "image": [
+                "elasticsearch",
+                "Elastic Search Prototype",
+                "alt-text"
+              ],
               "link": [],
               "caption": "",
               "Highlights": [],
