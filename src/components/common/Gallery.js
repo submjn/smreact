@@ -1,28 +1,18 @@
 import React from 'react';
 import { Works } from '../../store/data/projects';
-import { checkImage, flatten } from '../../hooks/Utils';
+import { checkImage, flatten, imagePlaceholder } from '../../hooks/Utils';
 
 
 const groupByProjects = (projects, prop) => {
-    var arr = projects.map(item => item[prop]).filter(x => x !== undefined)
-    var arr2 = projects.map(item => item.clients).filter(x => x !== undefined)
-    arr2 = arr2.map(item => item[0][prop]).filter(x => x!== undefined)
-    arr = arr.concat(arr2)
-    // console.log(arr)
-    return flatten(arr)
+    var projectArray = projects.reduce((acc, obj) => {
+        if(obj[prop]) acc.push(obj[prop])
+        if(obj.clients) acc.push((obj.clients)[0][prop])
+        return acc.filter(x => x !== undefined)
+    }, [])
+    return flatten(projectArray)
 }
 
 let Projects = groupByProjects(Works, 'projects');
-let imageList = () => {
-    var arr = []
-    Projects.map((item) => {
-        console.log(item.image[0])
-        return arr.push([checkImage(item.image, true), checkImage(item.image, false)])
-    })
-    return arr;
-}
-
-console.log(imageList())
 
 const Gallery = () => (
     <div className="masonry">
@@ -32,8 +22,8 @@ const Gallery = () => (
                     <div className="item-folio">
         
                         <div className="item-folio__thumb">
-                            <a href={checkImage(item.image, true)} className="thumb-link" title={item.image[1]} data-size="1050x700">
-                                <img src={checkImage(item.image, false)} alt={item.image[2]} />
+                            <a href={checkImage(item.image, true) || imagePlaceholder(item.image[1], [1050, 700], [1050, 700])} className="thumb-link" title={item.image[1]} data-size="1050x700">
+                                <img src={checkImage(item.image, false) || imagePlaceholder(item.image[1], [500, 300], [300, 200])} alt={item.image[2]} />
                                 <span className="shadow-overlay"></span>
                             </a>
                         </div>

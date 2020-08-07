@@ -114,7 +114,7 @@ export const Works = [
               "title": "MDAT",
               "category": "Web Development",
               "image": [
-                "mdat",
+                "",
                 "Microdata Access Tool",
                 "alt-text"
               ],
@@ -133,7 +133,7 @@ export const Works = [
               "title": "CEDSCI",
               "category": "Web Development",
               "image": [
-                "cedsci",
+                "",
                 "Census Data Dessimination Tool",
                 "alt-text"
               ],
@@ -152,7 +152,7 @@ export const Works = [
               "title": "Search Compare (Proof of Concept)",
               "category": "Web Development",
               "image": [
-                "elasticsearch",
+                "",
                 "Elastic Search Prototype",
                 "alt-text"
               ],
@@ -181,7 +181,7 @@ export const Works = [
           "title": "Updater - Insurance Step Flow",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Insurance Flow",
             "alt-text"
           ],
@@ -266,7 +266,7 @@ export const Works = [
           "title": "Royal College of Pediatrics and Child Health",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of RCPCH",
             "alt-text"
           ],
@@ -285,7 +285,7 @@ export const Works = [
           "title": "Acland’s Anatomy",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of Aclands",
             "alt-text"
           ],
@@ -304,7 +304,7 @@ export const Works = [
           "title": "American Academy of Pediatrics",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of AAP",
             "alt-text"
           ],
@@ -323,7 +323,7 @@ export const Works = [
           "title": "American Society of Anesthesiologists",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of ASA",
             "alt-text"
           ],
@@ -342,7 +342,7 @@ export const Works = [
           "title": "American Journal of Occupational Therapy",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of OT",
             "alt-text"
           ],
@@ -361,7 +361,7 @@ export const Works = [
           "title": "American Speech, Language, Hearing Association",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of ASHA",
             "alt-text"
           ],
@@ -380,7 +380,7 @@ export const Works = [
           "title": "Health Library",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Health Library",
             "alt-text"
           ],
@@ -399,7 +399,7 @@ export const Works = [
           "title": "Five Minute Consult",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "5MC",
             "alt-text"
           ],
@@ -418,7 +418,7 @@ export const Works = [
           "title": "McGraw-Hill Medical-Access medicine",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Access Medicine",
             "alt-text"
           ],
@@ -437,7 +437,7 @@ export const Works = [
           "title": "McGraw-Hill Medical-Clinical Access",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Clinical Access",
             "alt-text"
           ],
@@ -456,7 +456,7 @@ export const Works = [
           "title": "American College of Physicians-Annals",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of APA",
             "alt-text"
           ],
@@ -475,7 +475,7 @@ export const Works = [
           "title": "American College of Physicians-Smart Medicine",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Smart Medicine",
             "alt-text"
           ],
@@ -494,7 +494,7 @@ export const Works = [
           "title": "American College of Chest Physicians",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of ACCP",
             "alt-text"
           ],
@@ -513,7 +513,7 @@ export const Works = [
           "title": "American Pharmaceutical Association",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of APHA",
             "alt-text"
           ],
@@ -532,7 +532,7 @@ export const Works = [
           "title": "American College of Cardiology",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Journal of ACC",
             "alt-text"
           ],
@@ -551,7 +551,7 @@ export const Works = [
           "title": "SPIE Digital Library",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "SPIE Digital Library",
             "alt-text"
           ],
@@ -570,7 +570,7 @@ export const Works = [
           "title": "American Society of Mechanical Engineers",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "My Market News",
             "alt-text"
           ],
@@ -589,7 +589,7 @@ export const Works = [
           "title": "American Medical Association",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "My Market News",
             "alt-text"
           ],
@@ -648,7 +648,7 @@ export const Works = [
           "title": "Bodhi Systems",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Bodhi Systems",
             "alt-text"
           ],
@@ -666,7 +666,7 @@ export const Works = [
           "title": "Offcampus Partners",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Offcampus Partners",
             "alt-text"
           ],
@@ -684,7 +684,7 @@ export const Works = [
           "title": "Natural Retreats",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Natural Retreats",
             "alt-text"
           ],
@@ -702,7 +702,7 @@ export const Works = [
           "title": "Southern Teachers",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Southern Teachers",
             "alt-text"
           ],
@@ -720,7 +720,7 @@ export const Works = [
           "title": "Odyssei Clothing",
           "category": "Web Development",
           "image": [
-            "mars",
+            "",
             "Odyssei Clothing",
             "alt-text"
           ],
