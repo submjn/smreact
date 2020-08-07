@@ -22,8 +22,8 @@ const Gallery = () => (
                     <div className="item-folio">
         
                         <div className="item-folio__thumb">
-                            <a href={checkImage(item.image, true) || imagePlaceholder(item.image[1], [1050, 700], [1050, 700])} className="thumb-link" title={item.image[1]} data-size="1050x700">
-                                <img src={checkImage(item.image, false) || imagePlaceholder(item.image[1], [500, 300], [300, 200])} alt={item.image[2]} />
+                            <a href={checkImage(item.image, true) || imagePlaceholder(item.image[1], 1075, 700)} className="thumb-link" title={item.image[1]} data-size="1050x700">
+                                <img src={checkImage(item.image, false) || imagePlaceholder(item.image[1], [200, 400], [220, 320])} alt={item.image[2]} />
                                 <span className="shadow-overlay"></span>
                             </a>
                         </div>

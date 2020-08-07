@@ -94,7 +94,7 @@ export const Works = [
             "alt-text"
           ],
           "link": [
-            "https://www.sabresystems.com/",
+            "https://www.sabresystems.com/Cyber/",
             "Project Link"
           ],
           "caption": "",
@@ -648,7 +648,7 @@ export const Works = [
           "title": "Bodhi Systems",
           "category": "Web Development",
           "image": [
-            "",
+            "bodhi",
             "Bodhi Systems",
             "alt-text"
           ],
@@ -666,7 +666,7 @@ export const Works = [
           "title": "Offcampus Partners",
           "category": "Web Development",
           "image": [
-            "",
+            "offcampus",
             "Offcampus Partners",
             "alt-text"
           ],
@@ -684,7 +684,7 @@ export const Works = [
           "title": "Natural Retreats",
           "category": "Web Development",
           "image": [
-            "",
+            "naturalretreats",
             "Natural Retreats",
             "alt-text"
           ],
@@ -702,7 +702,7 @@ export const Works = [
           "title": "Southern Teachers",
           "category": "Web Development",
           "image": [
-            "",
+            "southernteachers",
             "Southern Teachers",
             "alt-text"
           ],
@@ -720,7 +720,7 @@ export const Works = [
           "title": "Odyssei Clothing",
           "category": "Web Development",
           "image": [
-            "",
+            "odyssei",
             "Odyssei Clothing",
             "alt-text"
           ],

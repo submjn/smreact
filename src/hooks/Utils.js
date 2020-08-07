@@ -1,4 +1,5 @@
-export const getRandomInt = (min, max) => {
+export const getRandomInt = (range) => {
+    var [min, max] = [...range]
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -10,10 +11,12 @@ export const flatten = (arr) => {
     return arr.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten), []);
 }
 
-export const imagePlaceholder = (title, width, height) => {
-    const [hmax, hmin, wmax, wmin] = [...height, ...width];
-    const placeholderImage = `https://via.placeholder.com/${getRandomInt(wmax, wmin)}x${getRandomInt(hmax, hmin)}/${getRandomColor()}/${getRandomColor()}?text=${title}`;
-    return placeholderImage;
+export const imagePlaceholder = (title, width, height, fColor, bColor) => {
+    if(!fColor) fColor = getRandomColor();
+    if(!bColor) bColor = getRandomColor();
+    if(width.length === 2) width = getRandomInt(width)
+    if(height.length === 2) height = getRandomInt(height)
+    return `https://via.placeholder.com/${width}x${height}/${fColor}/${bColor}?text=${title}`;
 }
 
 export const checkImage = (img, gallery) => {

@@ -2377,7 +2377,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .masonry .grid-sizer, .masonry__brick {
-    width: 400px;
+    /* width: 400px; */
+    width: auto;
 }
 
 .masonry__brick {
